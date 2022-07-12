@@ -8,11 +8,10 @@ main[role=main] {
     background: transparent;
 }
 
-@media only screen and (min-width: 1025px) {
-    .paragraph {
-        padding: 0;
-    }
+.paragraph {
+    padding: 0!important;
 }
+
 
 .uby-header {
     position: relative;
