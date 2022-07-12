@@ -1,0 +1,91 @@
+label {
+  display: block;
+  padding: 7px 0;
+}
+
+input, textarea {
+  width: calc(100% - 24px);
+  border-radius: 5px;
+  padding: 0;
+
+  @media #{$media-bigMobile}{
+    // max-width: 200px;
+  }
+}
+
+textarea {
+  height: 120px;
+}
+
+.form-item {
+  margin: 10px 0;
+}
+
+input[type="submit"] {
+  width: auto;
+  cursor: pointer;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  font-size: 100%;
+  margin: 0 0 0 15px;
+  padding: 0 15px;
+  text-decoration: none;
+  background: #ccc;
+  border: 0;
+  border-radius: 3px;
+  text-shadow: 1px 1px #fff;
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0%, #e5e5e5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #e5e5e5));
+  background: -webkit-linear-gradient(top, #fff 0%, #e5e5e5 100%);
+  background: -o-linear-gradient(top, #fff 0%, #e5e5e5 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #e5e5e5 100%);
+  background: linear-gradient(to bottom, #fff 0%, #e5e5e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#e5e5e5', GradientType=0);
+  color: #333;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+}
+
+#block-contactblock {
+  position: relative;
+  float: none;
+  padding: 10px 40px 40px;
+
+  margin: 20px 0;
+  @media #{$media-bigMobile} {
+    float: left;
+  label {
+      float: left;
+      min-width: 80px;
+      text-align: left;
+      padding-right: 20px;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-radius: 3px;
+    height: 18px;
+    line-height: 18px;
+    padding: 10px 12px;
+    color: #333;
+    border: 1px solid #e5e5e5;
+  }
+  textarea {
+    min-height: 126px;
+  }
+
+  .form-actions {
+    text-align: right;
+  }
+
+  #edit-preview {
+    display: none;
+  }
+
+}

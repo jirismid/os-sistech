@@ -1,0 +1,97 @@
+
+.cbox-parent {
+    margin: 10px 0 0;
+}
+
+#cboxNext:before,
+#cboxPrevious:before,
+#cboxClose:before {
+    box-shadow: 0 0 3px black!important;
+}
+
+#cboxNext,
+#cboxPrevious,
+#cboxClose {
+    z-index: 1;
+}
+
+#cboxNext:before,
+#cboxPrevious:before,
+#cboxClose:before {
+    background: $color-gallery-btns!important; //tlacitka v nahledu
+}
+
+#cboxNext:focus,
+#cboxPrevious:focus,
+#cboxClose:focus {
+    outline-width: 0!important;
+}
+
+.cboxElement,.colorbox{
+	display:block;
+	position:relative;
+	border:1px solid #ccc;
+	//border: 1px solid #ffffff;
+	border: 0;
+	transition: transform .2s; /* Animation */
+
+	&:before {
+		content: "";
+		//background: rgba(214, 179, 141, 0.2);
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&:hover {
+		transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+		&:before {
+			display: none;
+		}
+	}
+
+	img{
+		display:block;
+		width:auto;
+		max-width:100%;
+		height:auto;
+	}
+}
+
+.cbox-parent{ //3
+	padding:0;
+	margin:0;
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+	grid-gap: 5px;
+	text-align:center;
+
+	&.three{
+		grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+	}
+
+	&.four{
+		grid-template-columns:repeat(auto-fit,minmax(205px,1fr));
+		grid-gap: 15px;
+	}
+	&.five{ //3
+		grid-template-columns:repeat(auto-fit,minmax(155px,1fr));
+		grid-gap: 15px;
+	}
+
+
+	@media #{$media-bigMobile} {
+		grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+	}
+
+	@media #{$media-tablet} {
+		grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+	}
+
+	@media #{$media-desktop} {
+		grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+	}
+}

@@ -1,4 +1,4 @@
-name: os-sistech-old
+name: os-sistech
 recipe: lamp
 config:
   webroot: .

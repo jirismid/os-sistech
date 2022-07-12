@@ -1,0 +1,45 @@
+header {
+    //critical: this;
+    position:relative;
+    width:calc(100% - 20px);
+    padding:10px;
+    background: #0c173b;
+    z-index: 2;
+    background-size: 100%;
+    position: fixed;
+    font-family: $fontHeader;
+    transition: 0.2s;
+
+    @media #{$media-desktop} {
+        background: #0c173b;
+    }
+
+    &.scroll {
+        background: #0c173b;
+        box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0;
+    }
+
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+
+
+    .wrapper {
+        //critical: this;
+        position:relative;
+        max-width: 1200px;
+
+        &:after{
+            content:"";
+            display:table;
+            clear:both;
+        }
+
+        @media #{$media-desktop} {
+        //critical: this;
+          padding: 0 5px 10px;
+        }
+    }
+}

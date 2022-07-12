@@ -1,0 +1,45 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px 5px 15px;
+  font-weight: bold;
+  background-color: $btn-background-color;
+  color: $btn-color !important;
+  text-decoration: none !important;
+  text-align: center;
+  border: none;
+  //border-radius: 4px;
+
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    bottom: -7px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $btn-background-color-hover;
+    text-decoration: none!important;
+  }
+
+  &.blue {
+    @include gradient-horizontal (#004899, #0a0c54, 0%, 100%);
+
+    &:hover {
+
+      @include gradient-horizontal (#0057b9, #0c0f79, 0%, 100%);
+    }
+
+    &:after {
+      background-image: url(../img/btn-arr-red.png);
+    }
+  }
+
+}

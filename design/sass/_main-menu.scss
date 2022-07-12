@@ -1,0 +1,211 @@
+.scroll .main-menu {
+
+    @media #{$media-desktop} {
+        //critical: this;
+        margin: 15px 0 0;
+    }
+}
+
+.main-menu {
+    //critical: this;
+    position:relative;
+    clear:both;
+    float:none;
+
+    h2 {
+        display:none;
+    }
+
+    @media #{$media-tablet} {
+        //critical: this;
+        margin: 0;
+        float:right;
+        clear:none;
+    } 
+
+    @media #{$media-desktop} {
+        //critical: this;
+        margin: 35px 0 0;
+    }
+
+    ul#paragraph-menu {
+        //critical: this;
+        padding: 22px 0;
+        display: none;
+        max-width: 100%;
+        margin: 0 auto;
+
+        @media #{$media-tablet} {
+            float: right;
+            padding: 0;
+            margin: 6px 0 0;
+            display: inline-block !important;
+        }
+
+        @media #{$media-desktop} {
+            margin: 0 0 0;
+        }
+
+        li {
+            //critical: this;
+            display: block;
+            padding: 0;
+            border-bottom: 1px solid $menu-link-mobile-line;
+
+            //&:first-child a span:before{
+                //content: "Domů";
+                //display: inline-block;
+            //}
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            @media #{$media-tablet} {
+                display: inline-block;
+                padding: 0;
+                margin: 0 2px;
+                border: 0;
+                vertical-align: top;
+
+            }
+
+            a {
+                display:block;
+                background: $menu-link-mobile-bg;
+                padding:0;
+                transition: 300ms;
+                font-weight: normal;
+                color: $menu-link-mobile;
+                text-decoration: none;
+                border: none;
+                line-height: 25px;
+                height: auto;
+                position: relative;
+                text-transform: normal;
+                //z-index: 1;
+
+                @media #{$media-tablet} {
+                    transition:300ms;
+                    text-shadow: 0;
+                    background: transparent;
+                    //border: 4px solid transparent;
+                    color: $menu-link-desktop;
+                    border-radius: 0px;
+
+                }
+
+                &:hover, 
+                &.is-active {
+                    color: $menu-link-mobile-hover;
+                    background: $menu-link-mobile-bg-hover;
+                    
+                    @media #{$media-tablet} {
+                        background: none;
+                        color: $menu-link-desktop-hover;
+                        border-color: $menu-link-desktop-hover-line;
+
+                        &:before {
+                            //background: blue;
+                        }
+
+                        &:after {
+                            //background: transparent;
+                        }
+                        
+                    }
+                }
+
+
+                span {
+                    display: block;
+                    padding: 15px 20px;
+                    text-align: center;
+                    //z-index: 1; problem problik.... v menu ??? jak vyřešit?
+                    //position: relative;
+
+
+                    svg {
+                      display: none;
+                      vertical-align: text-top;
+                    }
+
+                    @media #{$media-tablet} {
+                        padding: 5px 20px;
+                        margin: 0;
+
+                        svg {
+                          display: inline-block;
+                        }
+                    }
+
+                    @media #{$media-desktop} {
+                        font-size: 18px;
+                    }
+
+                    @media #{$media-desktop-to} {
+                        font-size: 20px;
+                    }
+
+                }
+
+                i { //kvuli klikatelne oblasti v mobilu - schova menu, viz global.js a.ui-tabs-anchor i
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: transparent;
+
+                    @media #{$media-tablet} {
+                        display: none;
+                    }
+                }
+
+            } //end a
+
+            &.ui-tabs-active a {
+
+                color: $menu-link-mobile-active;
+
+                // background: $menu-link-mobile-bg-hover;
+                &:hover {
+                    color: $menu-link-mobile-hover;
+                }
+
+                @media #{$media-tablet} {
+                    font-weight: bold;
+                    background: none;
+                    color: $menu-link-desktop-active;
+
+                    &:hover {
+                        color: $menu-link-desktop-active;
+                    }
+                    //border: 4px solid $menu-link-desktop-hover-line; //#bfcbe2;
+                    text-shadow: 0 0 0 transparent;
+                    
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -4px;
+                        right: 0;
+                        height: 4px;
+                        background: #00b2f4;
+                    }
+                }
+
+            } //end &.ui-tabs-active a
+
+        } //end li
+
+    } //end ul#paragraph-menu
+
+    &.active {
+        ul#paragraph-menu{
+            display:block;
+        }
+    }
+
+} //end .main-menu

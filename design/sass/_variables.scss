@@ -1,0 +1,74 @@
+/* variables */
+$font: 'Poppins', sans-serif;
+$fontHeader: 'Poppins', sans-serif;
+// Montserrat, Poppins
+
+$page-background: #0d183c; // footer bg ;-)
+$color-gallery-btns: #292f38; //barva v tlačítek v galerii
+$text-color: #111518;
+$header-background: #fff;
+$main-background: #ffffff;
+$logo-a: #00b2f4;
+
+$menu-btn: white;
+
+$callto-color: #111518; //odkazy s třídou callto - používa se pro čísla
+$mailto-color: #00b2f4; //odkazy s třídou mailto - používa se pro emaily
+$color-menu-button: #000;
+$color-menu-link: #000; //používá se?? pokud ne, smazat
+$menu-link-mobile: #ffffff;
+$menu-link-desktop: #ffffff;
+$menu-link-mobile-hover: #ffffff;
+$menu-link-desktop-hover: #ffffff;
+$menu-link-mobile-active: #00b2f4;
+$menu-link-desktop-active: #ffffff;
+$color-menu-link-hover: #c5b894; // používá se? smazat!
+$menu-link-mobile-line: #1d2d5d; //mobile:: - oddělující linka tlačítka
+$menu-link-desktop-hover-line: #e30613; //desktop:: barva linky podrtžení -hover - active
+$menu-link-mobile-bg: transparent; //mobile:: pozadí jednotlivých tlačítek menu
+$menu-link-mobile-bg-hover: #00b2f4; //mobile:: pozadí jednotlivých tlačítek menu hover, active
+$table-color: #33373e;
+
+$padding-mobile: 10px;
+$color-h1: #000;
+$color-h2: #000;
+$color-h2-hover: #733d89;
+$subpage-paragraph-nadpis: #00b2f4 ;  //#10181b
+$link: #121519;
+$lines: #966ea7;
+$btn-color: #fff;
+$btn-background-color: #00b2f4;
+$btn-background-color-hover: #48cdff;
+$background-img: url('../img/background.jpg');
+// media queries boundaries: @media screen and (max-width: $mqSmallDesktopTo){ }
+
+$cbox-halfsize: 440px;
+$mqMobile: 320px;
+$mqMobileTo: 559px;
+
+$mqBigMobile: 560px;
+$mqBigMobileTo: 767px;
+
+$mqTablet: 768px;
+$mqTabletTo: 1024px;
+
+$mqSmallDesktop: 1025px;
+$mqSmallDesktopTo: 1220px; //definovat max šířku layoutu
+$fonts: PT Sans Narrow;
+
+/* media queries variables */
+$media-mobileTo: "only screen and (max-width: #{$mqMobileTo})";
+$media-bigMobile: "only screen and (min-width: #{$mqBigMobile})";
+$media-cbox: "only screen and (min-width: #{$cbox-halfsize})";
+$media-only-phablet: "only screen and (min-width: #{$mqBigMobile}) and (max-width: #{$mqBigMobileTo})";
+$media-tablet: "only screen and (min-width: #{$mqTablet})";
+$media-tabletTo: "only screen and (max-width: #{$mqTabletTo})";
+$media-only-tablet: "only screen and (min-width: #{$mqTablet}) and (max-width: #{$mqTabletTo})";
+$media-desktop: "only screen and (min-width: #{$mqSmallDesktop})";
+$media-desktop-to: "only screen and (min-width: #{$mqSmallDesktopTo})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+
+
+

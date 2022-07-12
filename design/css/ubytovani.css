@@ -1,0 +1,280 @@
+body {
+    background: #fff url('../../ubytovani/bg-ubytovani.jpg') no-repeat top center;
+    color: #776d67;
+    text-align: center;
+}
+
+main[role=main] {
+    background: transparent;
+}
+
+@media only screen and (min-width: 1025px) {
+    .paragraph {
+        padding: 0;
+    }
+}
+
+.uby-header {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff9c;
+}
+.uby-header .inside {
+    position: relative;
+}
+
+.uby-header .img-center img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 15px;
+    }
+
+@media only screen and (min-width: 1025px) {
+
+    .uby-header {
+        background: #ffffff9c;
+    }
+
+    .uby-header .img-left{
+        float: left;
+    }
+    .uby-header .img-right{
+        float: right;
+    }
+
+    .uby-header .img-center{
+        float: left;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .uby-header .img-center img {
+        display: block;
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin: 0;
+    }
+
+
+    .uby-header .img-left,
+    .uby-header .img-right {
+        width: 50%;
+        position: relative;
+        z-index: 1;
+    }
+    .uby-header .img-left img,
+    .uby-header .img-right img {
+        display: block;
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .uby-header-text{
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .uby-header:before {
+        content: "";
+        width: 320px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        left: calc(50% - 160px); /* - šířka boxu */
+        top: 0;
+        background: url('../../ubytovani/stin-header.png') no-repeat top center;
+        z-index: 2;
+    }
+
+    .uby-header-text-in{
+        position: relative;
+        background: white;
+        margin: 0 auto;
+        width: 450px;
+        height: 220px;
+    }
+
+    .uby-header-text-in:before,
+    .uby-header-text-in:after {
+        content: "";
+        border: 246px solid transparent;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        position: absolute;
+        border-bottom: 0;
+        right: 100%;
+        top: 0;
+    }
+
+    .uby-header-text-in:before {
+            border-right: 120px solid #fff;
+        right: 100%;
+    }
+    .uby-header-text-in:after {
+        border-left: 120px solid #fff;
+        left: 100%;
+    }
+
+
+    /* 2 */
+
+    .uby-header-text-in2{
+        position: absolute;
+        background: #b18d7c;
+        margin: 0 auto;
+        width: 461px;
+        left: 0;
+        /* top: 0; */
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 230px;
+    }
+
+    .uby-header-text-in2:before,
+    .uby-header-text-in2:after {
+            content: "";
+        border: 230px solid transparent;
+        width: 0px;
+        height: 0px;
+        display: inline-block;
+        position: absolute;
+        border-bottom: 0;
+        right: 100%;
+        top: 0;
+    }
+
+    .uby-header-text-in2:before {
+        border-right: 120px solid #b18d7c;
+        right: 100%;
+    }
+    .uby-header-text-in2:after {
+        border-left: 120px solid #b18d7c;
+        left: 100%;
+    }
+
+
+}
+
+/* END > 1024 */
+
+
+.uby-header-text-in h2 {
+    color: #846552;
+    margin: 0;
+    padding: 0 0 20px;
+    line-height: 30px;
+}
+
+.uby-header-text-in h2 strong{
+    display: block;
+    font-size: 60px;
+    padding: 50px 0 0;
+}
+
+.uby-header-text-in h2 span{
+    display: inline-block;
+    position: relative;
+    padding: 0 0 20px;
+}
+
+.uby-header-text-in h2 span:before,
+.uby-header-text-in h2 span:after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 12px;
+    width: 30px;
+    height: 2px;
+    background: #846552;
+}
+
+.uby-header-text-in h2 span:after{
+    left: auto;
+    right: -40px;
+}
+
+.uby-header-text-in h2 i{
+    color: #282828;
+    text-transform: none;
+    font-size: 60px;
+    font-style: normal;
+    line-height: 50px;
+}
+
+.paragraph.uvod {background-image: none!important;}
+
+.paragraph.uvod:before,
+.paragraph.uvod:after {display: none!important;}
+
+.paragraph .paragraphInner {
+    padding: 60px 0 0;
+}
+
+.paragraph .inner {color: #776d67; padding: 0 30px 15px;}
+
+
+.paragraph-nadpis h2{color: #01a0db!important;text-align: left!important;font-size: 50px!important;display: block!important;}
+
+
+.pro-rybare {
+    background: #fcefe6;
+    padding: 30px 30px 45px 30px;
+    margin: 60px 0;
+}
+
+.pro-rybare h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #70ac3b;
+}
+
+
+
+.footer {
+    color: #ffdcc5;
+    padding: 0 10px;
+    border-top: none;
+}
+
+.footer .footerInside {
+    background: #684735 url('../../ubytovani/bg-footer.png') no-repeat top center;
+    padding: 30px 0;
+    text-align: center;
+    max-width: 1140px;
+}
+
+.footer .footerInside h2{
+    text-transform: uppercase;
+    color: #ffdcc5;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer .footerInside strong{
+    color: white;
+}
+
+.footer .footerInside a.call{
+    color: #ffdcc5;
+}
+
+.footer .footerInside a.mail{
+    color: #ffcc0e;
+}
+
+
+@media only screen and (min-width: 1025px) {
+    .cbox-parent {
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    }
+}
