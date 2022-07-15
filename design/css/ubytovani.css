@@ -80,17 +80,6 @@ main[role=main] {
         right: 0;
         bottom: 0;
     }
-    .uby-header:before {
-        content: "";
-        width: 320px;
-        height: 300px;
-        display: block;
-        position: absolute;
-        left: calc(50% - 160px); /* - šířka boxu */
-        top: 0;
-        background: url('../../ubytovani/stin-header.png') no-repeat top center;
-        z-index: 2;
-    }
 
     .uby-header-text-in{
         position: relative;
@@ -204,7 +193,7 @@ main[role=main] {
 .uby-header-text-in h2 i{
     color: #282828;
     text-transform: none;
-    font-size: 60px;
+    font-size: 58px;
     font-style: normal;
     line-height: 50px;
 }
